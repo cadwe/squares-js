@@ -5,7 +5,6 @@ export function onButton(table){
 	table.onclick = checkWichButtonPresed;
 	function checkWichButtonPresed(){
 		let target = event.target;
-		alert(target.className);
 		switch(target.className) {
 			case 'button1':
 				target.removeAttribute('class');
@@ -18,12 +17,10 @@ export function onButton(table){
 				makeHiden(table)
 				break;	
 			case 'button3':
-				alert(1);
 				sqr.lastChild.remove();	
 				makeHiden(table)
 				break;
 			case 'button4':
-				alert(2);
 				removeColum(table);
 				makeHiden(table);
 				break;
