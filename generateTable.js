@@ -21,16 +21,15 @@ export function makeHiden(table){
 
 	for (var i = 0; i <table.rows.length; i++) { 
 		if(i!=1){
-			table.rows[i].cells[table.rows[i].cells.length-1].style.opacity = 0.1;
+			table.rows[i].cells[table.rows[i].cells.length-1].style.opacity = 0;
 		}
-		table.rows[i].firstChild.style.opacity = 0.1;
+		table.rows[i].firstChild.style.opacity = 0;
 
 	}
 	for (var j = 0; j < table.rows[0].cells.length - 1; j++) {	
 		if(j!=1){	
-			table.lastChild.cells[j].style.opacity = 0.1;
+			table.lastChild.cells[j].style.opacity = 0;
 		}
-		table.firstChild.cells[j].style.opacity = 0.1;
+		table.firstChild.cells[j].style.opacity = 0;
 	}
 }
-
