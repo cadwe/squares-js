@@ -1,18 +1,54 @@
-#sqrs td{
-	border: 4px double black; /* Параметры границы */
-    background: #fc3; /* Цвет фона */
-    padding: 10px; /* Поля вокруг текста */
+
+body{
+	margin : 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+#page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background: #555;
+}
+#sqrs{
 
 }
-
-#sqrs {
-	margin: auto;
-	height: 300px;
-	width: 300px; 
-
-}
-
-.sqr {
+#sqrs table{
 	display: inline-block;
-	margin: 50px;
+	min-width: 300px;
+	background: #555;   
+	margin-left: 50px;
+	margin-top: 50px;
+} 
+#sqrs td{
+	height: 50px;
+	width: 50px;
+	background: #fff;
+}
+#sqrs tr{
+	margin: 0;
+	height: 12px;
+	width: 100%;
+	padding: 0px;
+}
+#sqrs td:hover{
+	background:  yellow;
+}
+
+#sqrs tr:first-child td:last-child{
+	background: #ccc;
+	cursor: pointer;
+}
+#sqrs tr:last-child td:first-child{
+	background: #ccc;
+	opacity: 1;
+	cursor: pointer;
+}
+tbody{
+	display: block;
+	margin: 0;
+	padding: 0;
 }
